@@ -1,0 +1,81 @@
+/* Sample Style Code */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root{
+    --main-bg-color: #faf8f3;
+    --main-text-color: #2c2c2c;
+    --accent-color: #8b6f47;
+    --accent-hover: #a0845c;
+    --secondary-bg: #f5f1eb;
+    --border-color: #e8e3db;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    background-color: var(--secondary-bg);
+    border-radius: 8px;
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+    color: var(--heading-text);
+}
+
+h3{
+    font-family: 'Playfair Display', serif;
+    color: var(--heading-text);
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+p{
+    font-family: 'Source Sans 3', sans-serif;
+    color: var(--body-text);
+    font-size: 1rem;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+
+input[type="text"] {
+    padding: 8px;
+    border: 2px solid var(--accent-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+
+#btn-replace {
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#btn-replace:hover {
+    background-color: var(--accent-hover);
+}
+
+#txt-result{
+    font-size: 1.2rem;
+}
